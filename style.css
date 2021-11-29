@@ -1,8 +1,12 @@
 
 .header {
-  background-image: url('images/header_background.png');
   background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
 
+#homeHeaderImage {
+  background-image: url('images/montblanc.jpg');
 }
 
 .footer {
@@ -11,37 +15,53 @@
   text-align: center;
 }
 
-.menu {
-  background-color: black;
-  height: 30px;
+.menubar {
+  background-color: #a6d7ff;
   position: sticky;
+  height: 51px;
   top: 0;
   text-align: center;
-  
+}
+
+.menubar a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.menubar a.DAButton {
+  float: left;
+  font-size: 30px;
+  padding: 8px 14px;
+}
+
+.menubar a:hover {
+  background-color: #91c2f4;
+  color: white;
+}
+
+.menubar a.activelink {
+  color: white;
+  text-decoration: underline;
 }
 
 div.header img {
-  margin-left: 50px;
-  margin-top: 30px;
   height: 300px;
   float: left;
 }
 
-div.header,div.footer,div.menu p {
+.header,.footer,.menubar p {
   color: white;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif, Arial;
 }
 
-.inner > p {
-  margin-bottom: 80 !important;
-}
-
-.inner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.inner > * {
-  padding: 20px;
+p.title {
+  text-align: center;
+  margin: auto;
+  font-size: 150px;
+  padding: 100px;
 }
